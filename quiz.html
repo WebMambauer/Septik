@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Тест</title>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- <meta name="robots" content="noindex, nofollow"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="wrapper">
+				<main class="main-quiz" id="main-quiz">
+					<section class="section-test">
+						<div class="test" id="test">
+							<div class="test__container">
+								<form action="#" class="test__form" id="test-form">
+									<!-- Начало левого блока -->
+									<div class="test__left left-test">
+										<div class="left-test__body" id="left-body">
+											<div class="left-test__top">
+												<div class="left-test__sheet"><img src="img/quiz/quiz_sheet.webp" alt=""></div>
+												<div class="left-test__online fz13 fw4"><span class="text-center">Онлайн</span></div>
+												<div class="left-test__img"><img src="img/quiz/quiz_man.webp" alt=""></div>
+												<div class="left-test__title fz20 fw4"><span>Иванов Иван</span></div>
+												<div class="left-test__subtitle fz14 fw4">Старший менеджер</div>
+												<div class="left-test__content" id="left-text"></div>
+											</div>
+											<div class="left-test__item left-test__gift gift-left-test">
+												<div class="gift-left-test__title fz18 fw3">
+													Пока что <span class="fw5">для Вас:</span>
+												</div>
+												<div class="gift-left-test__not-ready gift-left-test__stack">
+													<p class="gift-left-test__text fz15 fw3">
+														Подборка: <span class="fw7">не готова</span>
+													</p>
+												</div>
+												<div class="gift-left-test__not-ready gift-left-test__instruction">
+													<p class="gift-left-test__text fz15 fw3">
+														Инструкция: <span class="fw7">закрыта</span>
+													</p>
+												</div>
+												<div class="gift-left-test__not-ready gift-left-test__bounty">
+													<p class="gift-left-test__text fz15 fw3">
+														Подарок: <span class="fw7">не выбрын</span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="test__main" id="test-main">
+										<div class="quiz test__quiz" id="quiz">
+											<div class="quiz__content">
+												<!-- progress-bar -->
+												<div class="quiz-progressbar">
+													<div class="quiz-progressbar__body" id="quiz-progressbar">
+													</div>
+												</div>
+												<div class="quiz__body" id="quiz-body">
+													<div class="quiz-questions" id="questions">
+													</div>
+													<div class="quiz-controls fz16 fw4">
+														<div class="quiz-controls__btn-prev">
+															<div class="quiz-controls__arrows-prev btn-main-page__arrows quiz-controls__arrows-prev_hidden" id="arrows-prev">
+																<div class="btn-main-page__arrow btn-main-page__arrow-1"><img src="img/quiz/quiz_arrow-grey.webp" alt=""></div>
+																<div class="btn-main-page__arrow btn-main-page__arrow-2"><img src="img/quiz/quiz_arrow-grey.webp" alt=""></div>
+																<div class="btn-main-page__arrow btn-main-page__arrow-3"><img src="img/quiz/quiz_arrow-grey.webp" alt=""></div>
+															</div>
+															<button class="quiz-controls__arrows-prev btn-prev btnPrev-hidden" type='button' id="btn-prev">Назад</button>
+														</div>
+														<div class="quiz-controls__btn-next">
+															<button class="btn-next" id="btn-next" type='button' disabled="">Далее</button>
+															<div class="quiz-controls__arrows-next btn-main-page__arrows quiz-controls__arrows-next_hidden" id="arrows-next">
+																<div class="btn-main-page__arrow btn-main-page__arrow-1"><img src="img/main_page/arrow.webp" alt=""></div>
+																<div class="btn-main-page__arrow btn-main-page__arrow-2"><img src="img/main_page/arrow.webp" alt=""></div>
+																<div class="btn-main-page__arrow btn-main-page__arrow-3"><img src="img/main_page/arrow.webp" alt=""></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="quiz-results" id="results">
+													<div class="quiz-results__item">
+														<div class="quiz-results__loading" id="result-loading">
+															<div class="quiz-results__loading_img"></div>
+															<div class="quiz-results__loading_title fz18 fw4">
+																<span class="fw7">Каталог станций сформирован.</span><br>Он откроется сразу после регистрации
+															</div>
+														</div>
+														<div class="quiz-thanks indicator fz12 fw4" id="thanks-indicator"><span class="fw5">Спасибо</span> за ответы</div>
+														<div class="quiz-results__title fz30 fw4"><span class="fw7">Система сформировала каталог<br> станций,</span> которые вам подходят.</div>
+														<div class="quiz-results__subtitle fz16 fw4">Как вам удобнее получить результат?</div>
+														<form action="#" class="loading__content_form sending__form" id="large_form">
+															<div class="quiz-results__check check-results callback">
+																<label for="case1" class="check-results__item callback__item answer__item-yes_checked">
+																	<input type="radio" class="check-results__input callback__input ch-4" name="qw9" id="case1" value="What`s app" checked="">
+																	<div class="check-results__block callback__block ch1">
+																		<div class="check-results__img check-results__img_watsapp callback__img callback__img_watsapp">
+																		</div>
+																		<div class="check-results__text fw4 fz16">
+																			What` s app
+																		</div>
+																	</div>
+																</label>
+																<label for="case2" class="check-results__item callback__item">
+																	<input type="radio" class="check-results__input callback__input ch-3" name="qw9" id="case2" value="Viber">
+																	<div class="check-results__block callback__block ch-1">
+																		<div class="check-results__img check-results__img_viber callback__img callback__img_viber">
+																		</div>
+																		<div class="check-results__text fw4 fz16">
+																			Viber
+																		</div>
+																	</div>
+																</label>
+																<label for="case3" class="check-results__item callback__item">
+																	<input type="radio" class="check-results__input callback__input ch-2" name="qw9" id="case3" value="Telegram">
+																	<div class="check-results__block callback__block ch-1">
+																		<div class="check-results__img check-results__img_tg callback__img callback__img_tg">
+																		</div>
+																		<div class="check-results__text callback__text fw4 fz16">
+																			Telegram
+																		</div>
+																	</div>
+																</label>
+																<label for="case4" class="check-results__item callback__item">
+																	<input type="radio" class="check-results__input callback__input ch-1" name="qw9" id="case4" value="E-mailTelegram">
+																	<div class="check-results__block callback__block ch-1">
+																		<div class="check-results__img  check-results__img_email callback__img callback__img_email">
+																		</div>
+																		<div class="check-results__text fw4 fz16">
+																			E-mail
+																		</div>
+																	</div>
+																</label>
+															</div>
+															<div class="result-end callback-end">
+																<input type="tel" name='tel' class="result-end__input contact-info-master__input_tel callback-end__input inp-enp-ph" required placeholder="Ваш телефон в Wats'app">
+																<input type="email" name="mail" class="result-end__input callback-end__input eml"  placeholder="Ваш E-mail" style="display:none;">
+																<div class="result-end__offer callback-end__offer fz12 fw3">Подарок и Скидка на монтаж будет закреплена за вашим номером</div>
+																<button onclick="document.location='thanks.html'" data-main-form-submit class="result-end__btn callback-end__btn fz19 fw4">
+																	<span class="result-end__btn_blick callback-end__btn_blick"></span>
+																	<span>Получить результат</span> <span class="result-end__btn_bonus">+ бонусы</span>
+																</button><!-- href="thanks.html" -->
+																<div class="callback-end__warning hide">
+																	<span>Все поля должны быть заполнены</span>
+																</div>
+																<label class="result-end__link link-result-end link-callback-end">
+																	<input type="checkbox" value="value-1" class="link-result-end__icon link-callback-end__icon" checked>
+																	<span class="link-result-end__checkbox link-callback-end__checkbox fz11 fw4">
+																		Ознакомлен с<a href="#politics-popup" class="link-result-end__text link-callback-end__text popup__link fw5"> политикой конфиденциальноcти</a>
+																	</span>
+																</label>
+																<div class="result-end__gift gift-result-end">
+																	<div class="gift-result-end__title fz16 fw4">
+																		Вы сейчас <br> <span class="fw5">получите:</span>
+																	</div>
+																	<div class="gift-result-end__item fz12 fw4">
+																		<div class="gift-result-end__img gift-result-end__img_septiki"><img src="img/main_page/septiki_example.webp" alt=""></div>
+																		<div class="gift-result-end__subtitle"><span class="fw7">Подборку</span><br>идеальных<br>септиков</div>
+																	</div>
+																	<div class="gift-result-end__item fz12 fw4">
+																		<div class="gift-result-end__img gift-result-end__img_tui"><img src="img/quiz/quiz_tui-result.webp" alt=""></div>
+																		<div class="gift-result-end__subtitle"><span class="fw7">Подарок:</span> 5<br>раскошных<br>туй </div>
+																	</div>
+																	<div class="gift-result-end__item fz12 fw4">
+																		<div class="gift-result-end__img gift-result-end__img_instruction"><img src="img/quiz/quiz_full-instruction.webp" alt=""></div>
+																		<div class="gift-result-end__subtitle"><span class="fw7">Инструкцию:</span><br>Как правильно<br>выбрать септик:<br>16 советов</div>
+																	</div>
+																</div>
+															</div>
+														</form>
+														<div class="quiz-results__phone phone-quiz-results">
+															<div class="phone-quiz-results__item">
+																<div class="phone-quiz-results__timer">
+																	<div class="phone-quiz-results__text fz12 fw4">
+																		<p>Засекайте</p>
+																		<p class="phone-quiz-results__clock fz30 fw5">15</p>
+																		<p>минут</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="katalog__result">
+														<div class="katalog__body katalog__intro">
+															<div class="katalog__circle circle-katalog katalog__result-circle">
+																<div class="circle-katalog__arrows">
+																	<div class="circle-katalog__arrow circle-katalog__arrow-1"><img src="img/thanks/thanks_arrow.webp" alt=""></div>
+																	<div class="circle-katalog__arrow circle-katalog__arrow-2"><img src="img/thanks/thanks_arrow.webp" alt=""></div>
+																	<div class="circle-katalog__arrow circle-katalog__arrow-3"><img src="img/thanks/thanks_arrow.webp" alt=""></div>
+																</div>
+															</div>
+															<div class="katalog__title fz18 fw4">
+																<span class="fw7">Каталог станций сформирован.</span><br>
+																Он откроется сразу после регистрации
+															</div>
+															<div class="katalog__open fz21 fw5"><span>Каталог подходящих станций</span></div>
+															<div class="katalog__stantion fz30 fw4"><span class="fw7">Система подобрала станции,</span> которые для Вас подойдут </div>
+															<div class="katalog__content katalog__result-content">
+																<div class="katalog__tabs tabs-katalog">
+																	<nav class="tabs-katalog__items fz16 fw4">
+																		<div class="tabs-katalog__item">
+																			<a href="#tab_01" class="tabs-katalog__btn tabs-katalog__btn_left katalog__result-btn">
+																				<span>Идеальные станции, которые вам подходят:</span>
+																			</a>
+																			<span class="tabs-katalog__btn_description fz15 fw4">По вашим параметрам система <span class="fw7">подобрала 6 станций</span></span>
+																		</div>
+																		<div class="tabs-katalog__item">
+																			<a href="#tab_02" class="tabs-katalog__btn tabs-katalog__btn_right katalog__result-btn">
+																				<span>Также вам подойдут станции</span>
+																			</a>
+																		</div>
+																	</nav>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="test__right right-test" >
+											<div class="right-test__body">
+												<div class="right-test__close">
+													<a href="index.html" class="right-test__img"></a>
+												</div>
+												<div class="right-test__item" id="big-indicator">
+												</div>
+												<div class="right-test__arrows btn-main-page__arrows" id="arrow-right-hidden">
+													<div class="right-test__arrow btn-main-page__arrow btn-main-page__arrow-1"><img src="img/quiz/quiz_bigarrow.webp" alt=""></div>
+													<div class="right-test__arrow btn-main-page__arrow btn-main-page__arrow-2"><img src="img/quiz/quiz_bigarrow.webp" alt=""></div>
+													<div class="right-test__arrow btn-main-page__arrow btn-main-page__arrow-3"><img src="img/quiz/quiz_bigarrow.webp" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+
+					
+			<li class="answer answer__qw${index + 1}">
+				<label class="answer__item answer__item-${DATA[index].check} answer__item_qw${index + 1}" id="label" style="position: relative;">
+					<span class="answer__tooltip_qw${index + 1}-${answer.id} fz12 fw7" tooltip="${answer.tooltip}"></span>
+					<span class="answer__plus-qw-${index + 1} counter__btn" data-direction="plus"  style="position: absolute; right: 10px;">+</span>
+					<span class="answer__minus-qw-${index + 1} counter__btn dwn" data-direction="minus" style="position: absolute; left: 10px;">-</span>
+					<span class="answer__img-${index + 1}"><img src="${answer.imgsrc}" alt=""></span>
+					<input class="answer-input answer-input-${DATA[index].check} answer-input__qw${index + 1} answer-input__qw${index + 1}-${answer.id} answer-content-${answer.id} counter__value-${index + 1}" type="${answer.type}" data-max-count="10" name="qw${index + 1}" value="0">
+					<span class="answer__checkbox-${DATA[index].check} answer__checkbox-${DATA[index].check}-qw${index + 1}"></span>
+				</label>
+			</li>
+
+				</main>
+		</div>
+<div class="exit-popup">
+	<div class="exit-popup__close" ><img src="img/popup/close.webp" alt=></div>
+	<div class="exit-popup__content">
+		<div class="quiz-results__title fz30 fw7"><span>Скачайте БЕСПЛАТНО инструкцию:<br>"16 советов как выбрать идеальный септик"</span></div>
+		<div class="quiz-results__subtitle fz16 fw4">Как вам удобнее отправить?</div>
+		<div class="exit-popup__check callback">
+			<label for="case11" class="exit-popup__item callback__item">
+				<input type="radio" class="exit-popup__input callback__input ch-14" name="qw8" id="case11" value="What`s app" checked="">
+				<div class="exit-popup__block callback__block ch1">
+					<div class="exit-popup__img exit-popup__img_watsapp callback__img callback__img_watsapp">
+					</div>
+					<div class="exit-popup__text fw4 fz16">
+						What` s app
+					</div>
+				</div>
+			</label>
+			<label for="case12" class="exit-popup__item callback__item">
+				<input type="radio" class="exit-popup__input callback__input ch-13" name="qw8" id="case12" value="Viber">
+				<div class="exit-popup__block callback__block ch-1">
+					<div class="exit-popup__img exit-popup__img_viber callback__img callback__img_viber">
+					</div>
+					<div class="exit-popup__text fw4 fz16">
+						Viber
+					</div>
+				</div>
+			</label>
+			<label for="case13" class="exit-popup__item callback__item">
+				<input type="radio" class="check-results__input callback__input ch-12" name="qw8" id="case13" value="Telegram">
+				<div class="exit-popup__block callback__block ch-1">
+					<div class="exit-popup__img exit-popup__img_tg callback__img callback__img_tg">
+					</div>
+					<div class="exit-popup__text fw4 fz16">
+						Telegram
+					</div>
+				</div>
+			</label>
+			<label for="case14" class="exit-popup__item callback__item">
+				<input type="radio" class="exit-popup__input callback__input ch-11" name="qw8" id="case14" value="E-mailTelegram">
+				<div class="exit-popup__block callback__block ch-1">
+					<div class="exit-popup__img exit-popup__img_email callback__img callback__img_email">
+					</div>
+					<div class="exit-popup__text fw4 fz16">
+						E-mail
+					</div>
+				</div>
+			</label>
+		</div>
+		<div class="exit-popup-end callback-end">
+			<input type="tel" name='tel' class="exit-popup-end__input callback-end__input inp-pop-ph contact-info-master__input_tel" required="" placeholder="Ваш телефон в Wats'app" id="pop-ph">
+			<input class="exit-popup-end__input callback-end__input pop-eml" type="email" name="mail" placeholder="Ваш E-mail" style="display:none;">
+			<div class="exit-popup-end__offer callback-end__offer fz12 fw3">Подарок и Скидка на монтаж будет закреплена за вашим номером</div>
+			<a href="#" class="exit-popup-end__btn callback-end__btn fz19 fw4">
+				<span class="exit-popup-end__btn_blick callback-end__btn_blick"></span>
+				<span>Скачать инструкцию (PDF 1.5 Mb)</span>
+			</a>
+			<label class="exit-popup-end__link link-exit-popup-end link-callback-end">
+				<input type="checkbox" value="value-1" class="link-exit-popup-end__icon link-callback-end__icon" checked>
+				<span class="link-exit-popup-end__checkbox link-callback-end__checkbox fz11 fw4">Ознакомлен с<a href="" class="link-exit-popup-end__text link-callback-end__text fw5"> политикой конфиденциальноcти</a>
+				</span>
+			</label>
+		</div>
+		<div class="exit-popup__picture">
+			<img src="img/popup/book.webp" alt="">
+		</div>
+	</div>
+</div><div class="politics-popup popup" id="politics-popup">
+	<div class="politics-popup__body">
+		<div class="politics-popup__content popup__content"> 
+			<a href="thanks.html" class="politics-popup__close close-popup" ><img src="img/popup/close.webp" alt=></a>
+			<h2 class="politics-popup__title fz30 fw7">
+				ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+			</h2>
+			<p class="politics-popup__text">Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую данный сайт, на котором размещен текст этой Политики конфиденциальности, может получить о Пользователе, а также любых программ и продуктов, размещенных на нем.</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</h3>
+			<p class="politics-popup__text fz16 fw4">1.1. В настоящей Политике конфиденциальности используются следующие термины:<br>
+				1.1.1. «Администрация сайта» – уполномоченные сотрудники на управления сайтом, действующие от его имени, которые организуют и (или) осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.<br>
+				1.1.2. «Персональные данные» — любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).<br>
+				1.1.3. «Обработка персональных данных» — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.<br>
+				1.1.4. «Конфиденциальность персональных данных» — обязательное для соблюдения Администрацией сайта требование не допускать их умышленного распространения без согласия субъекта персональных данных или наличия иного законного основания.
+				1.1.5. «Пользователь сайта (далее Пользователь)» – лицо, имеющее доступ к сайту, посредством сети Интернет и использующее данный сайт для своих целей.<br>
+				1.1.6. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта.<br>
+				1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.
+			</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">ОБЩИЕ ПОЛОЖЕНИЯ</h3>
+			<p class="politics-popup__text">2.1. Использование Пользователем сайта означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.<br>
+			2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта.<br>
+			2.3. Настоящая Политика конфиденциальности применяется только к данному сайту. Администрация сайта не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на данном сайте.<br>
+			2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта.
+			</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</h3>
+			<p class="politics-popup__text">3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта по умышленному 	неразглашению персональных данных, которые Пользователь предоставляет по разнообразным запросам Администрации сайта (например, при регистрации на сайте, оформлении заказа, подписки на уведомления и т.п).<br>
+				3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения специальных форм на Сайте и обычно включают в себя следующую информацию:<br>
+				3.2.1. фамилию, имя, отчество Пользователя;<br>
+				3.2.2. контактный телефон Пользователя;<br>
+				3.2.3. адрес электронной почты (e-mail);<br>
+				3.2.4. место жительство Пользователя и другие данные.<br>
+				3.3. Администрация сайта также принимает усилия по защите Персональных данных, которые автоматически передаются в процессе посещения страниц сайта:<br>
+				IP адрес;<br>
+				информация из cookies;<br>
+				информация о браузере (или иной программе, которая осуществляет доступ к сайту);<br>
+				время доступа;<br>
+				посещенные адреса страниц;<br>
+				реферер (адрес предыдущей страницы) и т.п.<br>
+				3.3.1. Отключение cookies может повлечь невозможность доступа к сайту.<br>
+				3.3.2. Сайт осуществляет сбор статистики об IP-адресах своих посетителей. Данная информация используется с целью выявления и решения технических проблем, для контроля корректности проводимых операций.<br>
+				3.4. Любая иная персональная информация неоговоренная выше (история заказов, используемые браузеры и операционные системы и т.д.) не подлежит умышленному разглашению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.
+			</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ</h3>
+			<p class="politics-popup__text">
+				4.1. Персональные данные Пользователя Администрация сайта может использовать в целях:);<br>
+				4.1.1. Идентификации Пользователя, зарегистрированного на сайте, для оформления заказа и (или) заключения Договора.);<br>
+				4.1.2. Предоставления Пользователю доступа к персонализированным ресурсам сайта.);<br>
+				4.1.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования сайта, оказания услуг, обработка запросов и заявок от Пользователя.);<br>
+				4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.);<br>
+				4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.);<br>
+				4.1.6. Создания учетной записи для совершения заказов, если Пользователь дал согласие на создание учетной записи.);<br>
+				4.1.7. Уведомления Пользователя сайта о состоянии Заказа.);<br>
+				4.1.8. Обработки и получения платежей.);<br>
+				4.1.9. Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем, связанных с использованием сайта.);<br>
+				4.1.10. Предоставления Пользователю с его согласия, обновлений продукции, специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени сайта или от имени партнеров сайта.);<br>
+				4.1.11. Осуществления рекламной деятельности с согласия Пользователя.);<br>
+				4.1.12. Предоставления доступа Пользователю на сторонние сайты или сервисы партнеров данного сайта с целью получения их предложений, обновлений или услуг.
+			</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ</h3>
+			<p class="politics-popup__text">
+				5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.<br>
+				5.2. Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациями почтовой связи, операторам электросвязи, исключительно в целях выполнения заявок Пользователя, оформленных на сайте, в рамках Договора публичной оферты<br>
+				5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти только по основаниям и в порядке, установленным действующим законодательством.
+			</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">6. ОБЯЗАТЕЛЬСТВА СТОРОН</h3>
+			<p class="politics-popup__text">
+				6.1. Пользователь обязуется:<br>
+				6.1.1. Предоставить корректную и правдивую информацию о персональных данных, необходимую для пользования сайтом.<br>
+				6.1.2. Обновить или дополнить предоставленную информацию о персональных данных в случае изменения данной информации.<br>
+				6.1.3. Принимать меры для защиты доступа к своим конфиденциальным данным, хранящимся на сайте.<br>
+				6.2. Администрация сайта обязуется:<br>
+				6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.<br>
+				6.2.2. Не разглашать персональных данных Пользователя, за исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.<br>
+				6.2.3. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.
+			</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">7. ОТВЕТСТВЕННОСТЬ СТОРОН</h3>
+			<p class="politics-popup__text">
+				7.1. Администрация сайта несёт ответственность за умышленное разглашение Персональных данных Пользователя в соответствии с действующим законодательством, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности<br>
+				7.2. В случае утраты или разглашения Персональных данных Администрация сайта не несёт ответственность, если данная конфиденциальная информация:<br>
+				7.2.1. Стала публичным достоянием до её утраты или разглашения.<br>
+				7.2.2. Была получена от третьей стороны до момента её получения Администрацией сайта.<br>
+				7.2.3. Была получена третьими лицами путем несанкционированного доступа к файлам сайта.<br>
+				7.2.4. Была разглашена с согласия Пользователя.<br>
+				7.3. Пользователь несет ответственность за правомерность, корректность и правдивость предоставленной Персональных данных в соответствии с действующим законодательством.
+			</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">8. РАЗРЕШЕНИЕ СПОРОВ</h3>
+			<p class="politics-popup__text">
+				8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем сайта и Администрацией сайта, обязательным является предъявление претензии (письменного предложения о добровольном урегулировании спора).<br>
+				8.2. Получатель претензии в течение 30 календарных дней со дня получения претензии, письменно уведомляет заявителя претензии о результатах рассмотрения претензии.<br>
+				8.3. При не достижении соглашения спор будет передан на рассмотрение в судебный орган в соответствии с действующим законодательством.<br>
+				8.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией сайта применяется действующее законодательство.
+			</p>
+			<h3 class="politics-popup__subtitle fz19 fw7">9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</h3>
+			<p class="politics-popup__text">
+				9.1. Администрация сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.<br>
+				9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.
+			</p>
+		</div>
+	</div>
+</div><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+<script src="jquery.mask.min.js"></script>
+<script src="vendors.js"></script>
+<script src="main-quiz.js"></script>
+<script src="custom.js" ></script>
+	</body>
+</html>
